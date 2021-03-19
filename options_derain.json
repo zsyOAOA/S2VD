@@ -1,0 +1,47 @@
+{
+    # training settings
+    "epochs": 45,
+    "max_iter_EM": 2,
+    "print_freq": 5,
+    "resume": "None",
+    "delta": 0.03,  # step size for E-step 
+    "langevin_steps": 5,  # number of steps of langevin  
+    "epsilon2": 1e-6,
+    "rho": 0.5, # TV regularized penalty for unlabled data
+    "tv_weight": [1.0, 1.0, 2.0],  # hyper-parameter gamma of paper
+    "gpu_id": [1],
+    "lr_D": 2e-4,            # Learning rate for the deraining network
+    "lr_GRain": 1e-4,        # Learning rate for the emission model
+    "lr_GState": 1e-3,       # Learning rate for the transition model
+    "weight_decay_D": 1e-4,  # Weight decay for the deraining network
+    "weight_decay_GRain": 0, # Weight decay for the emission model
+    "weight_decay_GState": 0,# Weight decay for the transition model
+    "factor_lr": 0.5,        # decay factor for learning rate
+    "patch_size": 64,        # patch size
+    "model_dir": "models_save",
+    "log_dir": "logs_save",
+    "milestones": [30, 45],  # Epochs to decay learning rate
+    "pretrain_derain": 5,    # Number of epochs to pretrain the generator
+
+    # network settings
+    "latent_size": 64,  
+    "state_size": 128,  
+    "motion_size": 64,  
+    "feature_state": 128, 
+    "feature_rain_G": 64,    # number of feature for rain generator
+    "feature_derain_D": 32,  # number of feature for derain net
+    "n_resblocks": 8,        # residual blocks in derain net
+    "max_grad_norm_D": 1e4,  # grad norm threshold for derain net  
+    "truncate": 20,
+    "truncate_test": 16,
+
+    # dataset .mat file
+    "train_path": "/ssd1t/NTURain/train", # folder to save the training data of labeled synthetic data: *.mat
+    "train_path_semi": "/ssd1t/NTURain/train_semi", # folder to save the training data of unlabeled real data: *.mat
+    "test_path": "testsets/synthetic_NTURain/a1_Rain", # testing images of NTURain synthetic data: *.jpg
+    "test_path_semi": "testsets/real_NTURain/ra1_Rain", # testing images of NTURain real data:*.jpg
+    "latent_dir_name": "latent_eps6_rho05_tv112" , # floder to save the latent and state variable
+
+    # random seed
+    "seed": 1000
+}
