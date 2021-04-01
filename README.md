@@ -1,5 +1,5 @@
 # S2VD
-# [Semi-supervised Video Deraining with Dynamic Rain Generator (CVPR, 2021)](https://arxiv.org/abs/2103.07939)
+# [Semi-supervised Video Deraining with Dynamical Rain Generator (CVPR, 2021)](https://arxiv.org/abs/2103.07939)
 
 # Requirements and Dependencies
 * Ubuntu 16.04, cuda 10.0
@@ -54,7 +54,7 @@ You need firstly download the testing dataset of [NTURain](https://github.com/ho
 # Citation
 ```
 @incollection{CVPR2021_2429,
-title = {Semi-supervised video deraining with dynamic rain generator},
+title = {Semi-supervised video deraining with dynamical rain generator},
 author = {Yue, Zongsheng and Xie, Jianwen and Zhao, Qian and Meng, Deyu},
 booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
 year = {2021}
