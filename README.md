@@ -7,7 +7,7 @@
 * More detail (See [environment.yml](environment.yml))
 
 # Training pipelines
-1. Download the NTURain dataset from [here](https://github.com/hotndy/SPAC-SupplementaryMaterials), and prepare the training data as follows:
+1. Download the NTURain dataset from [here](https://github.com/hotndy/SPAC-SupplementaryMaterials) or [Baidu Cloud](https://pan.baidu.com/s/1NRUHtyVdQMjkOV_DQIFmgA)(Passwd:q067), and prepare the training data as follows:
     - Labled synthetic data:
         ```python
             python makedata/preparedata_NTU.py  --ntu_path your_downloaded_synthetic_path --train_path your_saved_train_path 
