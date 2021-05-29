@@ -22,7 +22,7 @@ model.load_state_dict(state_dict)
 model.eval()
 
 # load data
-base_data_path = Path('/home/oa/code/python/S2VD_git/testsets/synthetic_NTURain')
+base_data_path = Path('./testsets/synthetic_NTURain')
 rain_types = sorted([x.stem.split('_')[0] for x in base_data_path.glob('*_Rain')])
 
 truncate = 24
